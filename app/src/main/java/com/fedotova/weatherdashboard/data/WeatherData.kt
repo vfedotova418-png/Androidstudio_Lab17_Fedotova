@@ -5,5 +5,6 @@ data class WeatherData(
     val humidity: Int? = null,
     val windSpeed: Int? = null,
     val isLoading: Boolean = false,
-    val error: String? = null
+    val error: String? = null,
+    val loadingProgress: String = ""
 )
