@@ -92,6 +92,16 @@ fun WeatherDashboardScreen(
                 isLoading = false
             )
         }
+        Spacer(modifier = Modifier.height(16.dp))
+        Row (
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Text(
+                text = "🔄️ Auto-refresh every 10s",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.tertiary
+            )
+        }
         Spacer(modifier = Modifier.height(32.dp))
         Button(
             onClick = { viewModel.loadWeatherData() },
